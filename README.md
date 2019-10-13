@@ -13,6 +13,9 @@ This app that allows users to post their photos and see others posted by others 
 - [ ] Once signed in a user can follow other users and see their pictures on my timeline.
 - [ ] Once signed in a user can like a picture and comment on it.
 
+## Screenshot
+
+![A screenshot of the app page](http://oegkenya.ckadvocates.co.ke/images/Galleria.png "App Page")
 
 ## Getting Started
 
