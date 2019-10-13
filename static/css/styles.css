@@ -1,0 +1,95 @@
+
+/*Position logo and name in the navbar*/
+.col.logo {
+    border-right: 1px solid;
+}
+
+/*Brand sacing*/
+.col.brand {
+    margin-right: 180px;
+}
+
+/*Searchbox styling*/
+.searchbox {
+    margin-right: 240px;
+}
+
+/*Card Top*/
+button.btn.btn-sm.btn-white {
+    background-color: white;
+}
+
+
+/*Search Box Background*/
+input.form-control.form-control-sm.mr-sm-1 {
+    background-color: #8080801c;
+}
+
+/*Navbar length*/
+nav.container.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-white {
+    height: 77px;
+}
+
+/*Navbar Wrapper*/
+.container-full.header {
+    padding: 39px;
+    border-bottom: 1px solid #80808054;
+    background-color: white;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+/*Modal Body*/
+.modal-body.badge {
+    padding: 0rem;
+}
+
+/*Holds posts*/
+.jumbotron {
+    background-color: #e0dbdb38;
+}
+
+/*Modal color for fonts*/
+a.list-group-item.list-group-item-action.red {
+    color: #ff0000a1;
+}
+
+/*Profile Feature user-select: */
+p.mb-0.imgcred {
+    font-size: medium;
+    font-weight: bold;
+}
+
+p.mb-0.imgcredtime {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+/*Location Cred*/
+footer.locationcred {
+    font-size: x-small;
+    color: #212529cc;
+}
+
+/*Comment section*/
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+}
+
+.card-footer {
+    padding: 0px;
+    height: 40px;
+}
+
+/*Card Header*/
+.card-header {
+    background-color: white;
+}
+
+/*Section padding*/
+section.section {
+    padding: 0px 0px 50px 0px;
+}
