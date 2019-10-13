@@ -1,0 +1,28 @@
+<nav class="navbar navbar-light bg-light navbar-sticky-top">
+    <div class="container-full">
+
+        <ul class="nav justify-content-end">
+
+            <li>
+                <a class="navbar-brand" href="#"> Home</a>
+            </li>
+            <li>
+                <a class="navbar-item" href="{% url 'admin:index' %}">Admin</a>
+            </li>
+            <li>
+                <a class="navbar-link" href="{% url 'instagram:signup' %}">Register</a>
+            </li>
+
+            {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'instagram:logout' %}">Logout</a>
+                </li>
+            {% else %}
+                <li>
+                <a class="navbar-link" href="{% url 'instagram:user_login' %}">Login</a>
+            </li>
+            {% endif %}
+             
+        </ul>
+    </div>`
+</nav>

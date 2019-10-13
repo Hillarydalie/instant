@@ -1,0 +1,214 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+{{block.super}}
+    <!-- Navigation Bar -->
+    <div class="container-full header">
+        <nav class="container-full navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <div class="container nav-bar-top">   
+                <a class="navbar-brand" href="#">
+                    <div class="row">
+                        <div class="col logo">
+                            <img src="https://img.icons8.com/metro/50/000000/instagram-new.png" width="24" height="24">  
+                        </div>
+                        <div class="col brand">
+                            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">   
+                        </div>
+                    </div>
+                </a>
+                <div class="searchbox">
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control form-control-sm mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">
+                          <img src="https://img.icons8.com/ios/30/000000/search--v1.png" width="18" height="18">
+                      </button>
+                    </form>
+                </div>
+                <div class="navbar-right">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img src="https://img.icons8.com/wired/64/000000/marker.png" width="24" height="24">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="https://img.icons8.com/ios/50/000000/hearts.png" width="24" height="24">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="https://img.icons8.com/pastel-glyph/64/000000/user-male--v1.png" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End of navabar -->
+
+    <!-- This is the inner wrapper for the image and followers -->
+    <div class="jumbotron">
+        <!-- Row divider for image -->
+        <div class="row">
+            <!-- Image-Section -->
+            <div class="col-md-1">  
+                <!-- Empty block -->
+            </div>
+            <div class="col-md-6">
+                <section class="section">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <img src="..." class="col-md-3 rounded-circle">
+                                    <div class="col-md-7 username">
+                                        <!-- Feature name in profile -->
+                                        <blockquote class="blockquote">
+                                            <p class="mb-0 imgcred">Username</p>
+                                            <footer class="locationcred">Location</footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-2 popupset">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <img src="https://img.icons8.com/ios-glyphs/30/000000/ellipsis.png" width="20px" height="20px">
+                                        </button>
+                                        <!-- End Button trigger modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="container-full">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="https://img.icons8.com/ios/50/000000/like.png" width="30px" height="30px">
+                                        <!-- <img src="https://img.icons8.com/officel/80/000000/filled-like.png" width="30px" height="30px"> -->
+                                        <img src="https://img.icons8.com/ios/50/000000/topic.png" width="30px" height="30px">
+                                        <img src="https://img.icons8.com/ios/50/000000/upload.png" width="28px" height="28px">
+                                    </div>
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-2 highlight">
+                                        <img src="https://img.icons8.com/ios/50/000000/bookmark-ribbon.png" width="30px" height="28px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-full">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="mb-0 imgcredtime">Time Posted</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <input type="text" name="addcomment" placeholder="  Add a comment ...">                        
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <img src="..." class="col-md-3 rounded-circle">
+                                    <div class="col-md-7 username">
+                                        <!-- Feature name in profile -->
+                                        <blockquote class="blockquote">
+                                            <p class="mb-0 imgcred">Username</p>
+                                            <footer class="locationcred">Location</footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-2 popupset">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <img src="https://img.icons8.com/ios-glyphs/30/000000/ellipsis.png" width="20px" height="20px">
+                                        </button>
+                                        <!-- End Button trigger modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="container-full">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="https://img.icons8.com/ios/50/000000/like.png" width="30px" height="30px">
+                                        <!-- <img src="https://img.icons8.com/officel/80/000000/filled-like.png" width="30px" height="30px"> -->
+                                        <img src="https://img.icons8.com/ios/50/000000/topic.png" width="30px" height="30px">
+                                        <img src="https://img.icons8.com/ios/50/000000/upload.png" width="28px" height="28px">
+                                    </div>
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-2 highlight">
+                                        <img src="https://img.icons8.com/ios/50/000000/bookmark-ribbon.png" width="30px" height="28px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-full">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="mb-0 imgcredtime">Time Posted</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <input type="text" name="addcomment" placeholder="  Add a comment ...">                        
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modals -->
+                    <!-- Modal On Image -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body badge">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action red">Report Unappropriate</a>
+                                    <a href="#" class="list-group-item list-group-item-action red">Unfollow</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Go to post</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Embed</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Share</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Copy Link</a>
+                                    <a href="#" class="list-group-item list-group-item-action red" data-dismiss="modal">Cancel</a>
+                                </div>
+                          </div>    
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Modal on image -->
+                
+                <!-- End of Modals -->
+            </div>
+            <!-- End of Image-Section -->
+            <!-- Sidebar Section -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End of sidebar section -->
+        </div>
+        <!-- End of row divider -->
+    </div>
+    <!-- End of inner wrapper -->
+
+{% endblock %}
