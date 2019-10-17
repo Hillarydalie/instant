@@ -54,21 +54,19 @@
         <!-- Row divider for image -->
         <div class="row">
             <!-- Image-Section -->
-            <div class="col-md-1">  
-                <!-- Empty block -->
-            </div>
+            <div class="col-md-1"></div>
             <div class="col-md-6">
-                <section class="section">
+                    {% for img in image %}
                     <div class="card">
                         <div class="card-header">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <img src="..." class="col-md-3 rounded-circle">
+                                    <img src="{{user.profile.profile_pic.url}}" class="col-md-2 img-responsive rounded-circle">
                                     <div class="col-md-7 username">
                                         <!-- Feature name in profile -->
                                         <blockquote class="blockquote">
-                                            <p class="mb-0 imgcred">Username</p>
-                                            <footer class="locationcred">Location</footer>
+                                            <p class="mb-0 imgcred">{{img.user}}</p>
+                                            <footer class="locationcred">{{img.image_name}}</footer>
                                         </blockquote>
                                     </div>
                                     <div class="col-md-2 popupset">
@@ -81,95 +79,40 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="{{img.image.url}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <div class="container-full">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="https://img.icons8.com/ios/50/000000/like.png" width="30px" height="30px">
-                                        <!-- <img src="https://img.icons8.com/officel/80/000000/filled-like.png" width="30px" height="30px"> -->
-                                        <img src="https://img.icons8.com/ios/50/000000/topic.png" width="30px" height="30px">
-                                        <img src="https://img.icons8.com/ios/50/000000/upload.png" width="28px" height="28px">
-                                    </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-2 highlight">
-                                        <img src="https://img.icons8.com/ios/50/000000/bookmark-ribbon.png" width="30px" height="28px">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-full">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <p class="mb-0 imgcredtime">Time Posted</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <input type="text" name="addcomment" placeholder="  Add a comment ...">                        
-                        </div>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="card">
-                        <div class="card-header">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <img src="..." class="col-md-3 rounded-circle">
-                                    <div class="col-md-7 username">
-                                        <!-- Feature name in profile -->
-                                        <blockquote class="blockquote">
-                                            <p class="mb-0 imgcred">Username</p>
-                                            <footer class="locationcred">Location</footer>
-                                        </blockquote>
-                                    </div>
-                                    <div class="col-md-2 popupset">
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#exampleModalCenter">
-                                            <img src="https://img.icons8.com/ios-glyphs/30/000000/ellipsis.png" width="20px" height="20px">
-                                        </button>
-                                        <!-- End Button trigger modal -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="container-full">
-                                <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col">
                                         <img src="https://img.icons8.com/ios/50/000000/like.png" width="30px" height="30px">
                                         <!-- <img src="https://img.icons8.com/officel/80/000000/filled-like.png" width="30px" height="30px"> -->
                                         <img src="https://img.icons8.com/ios/50/000000/topic.png" width="30px" height="30px">
                                         <img src="https://img.icons8.com/ios/50/000000/upload.png" width="28px" height="28px">
                                     </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-2 highlight">
+                                    <div class="col"></div>
+                                    <div class="col highlight">
                                         <img src="https://img.icons8.com/ios/50/000000/bookmark-ribbon.png" width="30px" height="28px">
                                     </div>
                                 </div>
                             </div>
-                            <div class="container-full">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div class="container-fluid">
+                                <p>                                   
+                                    {{img.image_caption}}
+                                    {{img.id.url}}
                                 </p>
-                                <p class="mb-0 imgcredtime">Time Posted</p>
+                                <p class="mb-0 imgcredtime">{{img.published_date|timesince}} ago.</p>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <input type="text" name="addcomment" placeholder="  Add a comment ...">                        
+                            <form  method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ comment_form.as_p }}
+
+                                <input type="submit" name="" value="Comment">
+                            </form>                   
                         </div>
                     </div>
-                </section>
+                    {% endfor %}
 
                 <!-- Modals -->
                     <!-- Modal On Image -->
@@ -196,10 +139,28 @@
             </div>
             <!-- End of Image-Section -->
             <!-- Sidebar Section -->
+            <div class="col-md-1"></div>
 
             <div class="col-md-4">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="container">
+                    <img src="{{user.profile.profile_pic.url}}" class="col-md-4 img-responsive" >
+                </div>
+                <div class="container">
+                    <a href="post/new/">
+                        <img src="https://img.icons8.com/cotton/64/000000/add--v2.png" width="30px" height="30px">Add an Image
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="update/">
+                        <img src="https://img.icons8.com/dotty/50/000000/user-male.png" width="30px" height="30px">Update Profile
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="logout">
+                        <img src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png" width="30px" height="30px"> LOg Out
+                    </a>
+                </div>
+                    
                     <div class="card-body">
                         
                     </div>

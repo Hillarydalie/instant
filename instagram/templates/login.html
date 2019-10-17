@@ -3,18 +3,16 @@
 {% block content %}
 {{block.super}}
 
-    <div class="container">
-        <h1>Please Login</h1>
-
-        <form action="" method="POST">
-            {% csrf_token %}
-            <label for="username">Username:</label>
-            <input type="text" name="username" placeholder="Enter Username">
-
-            <label for="password">Password:</label>
-            <input type="password" name="password">
-
-            <input type="submit" name="" value="Login">
-        </form>
+    <div class="container text-center">
+        <h1 class="loginform"></h1>
+        <img src="https://img.icons8.com/officel/64/000000/instagram-new.png">
+        <!-- <h4>Please Log In</h4> -->
+        <div class="container-fluid">
+            <form class="form-signin" method="POST">
+                {% csrf_token %}
+                {{form}}
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Log In</button>
+            </form>
+        </div>
     </div>
 {% endblock %}  
