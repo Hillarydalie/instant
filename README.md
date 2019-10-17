@@ -15,7 +15,7 @@ This app that allows users to post their photos and see others posted by others 
 
 ## Screenshot
 
-![A screenshot of the app page](http://oegkenya.ckadvocates.co.ke/images/Galleria.png "App Page")
+![A screenshot of the app page](https://github.com/Hillarydalie/instant/blob/master/static/localescreenshot.png "App Page")
 
 ## Getting Started
 
