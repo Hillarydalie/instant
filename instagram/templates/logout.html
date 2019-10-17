@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<div class="jumbotron">
+    <h3>
+        You have been logged out succcessfully.
+        If you wish to access the service again, you'll need to Login.
+    </h3>
+    <a href="/login">Login
+    </a>
+
+{% endblock %}
