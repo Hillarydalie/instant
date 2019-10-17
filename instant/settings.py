@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'instant.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'instant',
+        'NAME': 'instagram',
         'USER': 'hillarydalie',
     'PASSWORD':'password',
     }
@@ -139,5 +139,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = 'login'
