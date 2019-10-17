@@ -72,12 +72,7 @@ footer.locationcred {
 }
 
 /*Comment section*/
-input[type="text"] {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: white;
-}
+
 
 .card-footer {
     padding: 0px;
@@ -89,7 +84,36 @@ input[type="text"] {
     background-color: white;
 }
 
-/*Section padding*/
-section.section {
-    padding: 0px 0px 50px 0px;
+.card {
+    margin-bottom: 10%;
+    /* padding-bottom: 10%; */
+}
+
+.container.buttons {
+    padding-top: 20%;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+h1.loginform {
+    padding-top: 17%;
+}
+
+input#id_image {
+    padding-left: 6%;
+}
+
+input#id_image_name {
+    margin-left: 1%;
+}
+
+.card.upload {
+    background-color: #80808038;
+    padding: 5%;
+    font-size: smaller;
 }
