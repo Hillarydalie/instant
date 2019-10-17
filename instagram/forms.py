@@ -17,19 +17,19 @@ class CreateComment(forms.ModelForm):
         fields = ['comment']
 
 class ImageUpload(forms.ModelForm):
+    
     class Meta:
         model = Image
         fields = ['image','image_name','image_caption']
 
-# class ImageUpload(CreateView):
+class UserUpdateProfile(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['profile_pic','bio']
 
-#     class Meta:
-#         model = Image
-#         fields = ['profile', 'user_profile', 'likes']
-#         exclude = ['user']
-
-# class UpdateProfile(forms.ModelForm):
-#     class Meta:
-#         model = Profile
-#         fields = ['bio', 'profile_picture']
-
+class UserUpdate(forms.ModelForm):
+    email = forms.EmailField()
+    
+    class Meta:
+        model = User
+        fields = ['username','email']
